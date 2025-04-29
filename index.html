@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adamya Bhandari | Portfolio</title>
+    <title>Vedanta Singh | Portfolio</title>
     <style>
         :root {
             --primary: #6c63ff;
@@ -216,6 +216,20 @@
             height: auto;
             animation: float 6s ease-in-out infinite;
         }
+
+        .video-cv {
+    width: 320px;
+    /* Adjust based on your design */
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    margin-left: -3cm;
+}
+
+.video-cv:hover {
+    transform: scale(1.05);
+}
         
         @keyframes float {
             0% { transform: translateY(0px); }
@@ -955,7 +969,6 @@
                 <a href="#hero">Home</a>
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
-                <a href="#certificates">Certificates</a>
                 <a href="#projects">Projects</a>
                 <a href="#achievements">Achievements</a>
                 <a href="#education">Education</a>
@@ -980,7 +993,8 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg" alt="Hero Image">
+            <video id="video-cv" src="vdeocv.mp4" class="video-cv" muted controls poster="code/photome.jpg">
+            </video>
         </div>
         <div class="bg-shape shape-1"></div>
         <div class="bg-shape shape-2"></div>
@@ -1048,31 +1062,6 @@
             </div>
         </div>
     </section>
-    <section id="certifications" class="">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-extrabold gradient-text mb-7 text-center">Certifications</h2>
-      <ul class="space-y-5">
-        <li class="flex items-start bg-white bg-opacity-90 rounded-xl shadow-lg p-4 shadow-hover"><i class="fas fa-certificate text-blue-500 text-2xl mr-4"></i>
-          <div><b>Complete Machine Learning and Data Science Program</b> - GeeksForGeeks, July 2024</div>
-        </li>
-        <li class="flex items-start bg-white bg-opacity-90 rounded-xl shadow-lg p-4 shadow-hover"><i class="fas fa-certificate text-blue-500 text-2xl mr-4"></i>
-          <div><b>Data Structures and Algorithms</b> - GeeksForGeeks, May 2024</div>
-        </li>
-        <li class="flex items-start bg-white bg-opacity-90 rounded-xl shadow-lg p-4 shadow-hover"><i class="fas fa-certificate text-blue-500 text-2xl mr-4"></i>
-          <div><b>R programming</b> - Coursera/John Hopkins University, March 2023</div>
-        </li>
-        <li class="flex items-start bg-white bg-opacity-90 rounded-xl shadow-lg p-4 shadow-hover"><i class="fas fa-certificate text-blue-500 text-2xl mr-4"></i>
-          <div><b>Hackerrank</b> (Problem Solving, Java, Python)</div>
-        </li>
-        <li class="flex items-start bg-white bg-opacity-90 rounded-xl shadow-lg p-4 shadow-hover"><i class="fas fa-certificate text-blue-500 text-2xl mr-4"></i>
-          <div><b>Coursera</b> (IBM Data Science, Analysis of Algorithms & others)</div>
-        </li>
-        <li class="flex items-start bg-white bg-opacity-90 rounded-xl shadow-lg p-4 shadow-hover"><i class="fas fa-certificate text-blue-500 text-2xl mr-4"></i>
-          <div><b>Udemy</b> (Mastering Data Structures & Algorithms using C++, Python)</div>
-        </li>
-      </ul>
-    </div>
-  </section>
 
     <!-- Projects Section -->
     <section id="projects">
@@ -1309,7 +1298,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <a href="#" class="footer-logo">Adamya<span>.</span></a>
+            <a href="#" class="footer-logo">Adamaya<span>.</span></a>
             <div class="footer-links">
                 <a href="#hero">Home</a>
                 <a href="#about">About</a>
